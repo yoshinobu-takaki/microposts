@@ -6,6 +6,9 @@
     <h1>Sign up</h1>
   </div>
   
+  <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+  
   {!! Form::open(['route'=> 'signup.post']) !!}
     <div class="form-group">
       {!! Form::label('name','Name') !!}
@@ -23,12 +26,14 @@
     </div>
       
     <div class="form-group">
-      {!! Form::label('password_confirmation','Name') !!}
+      {!! Form::label('password_confirmation','Password confirmation') !!}
       {!! Form::password('password_confirmation', ['class'=>'form-control']) !!}
     </div>
       
       {!! Form::submit('Sign up',['class'=>'btn btn-primary btn-block']) !!}
   
   {!! Form::close() !!}    
-    
+  
+          </div>
+    </div>
 @endsection
